@@ -17,18 +17,20 @@ const TopBar: React.FC = () =>  {
         <div className={styles.topBar}>
             <div className={styles.actions}> 
             <h1 className={styles.logo}>BB-Wars Auction House</h1>
-                <search  > 
-                    <form className = {styles.search}>
+            </div>  
+                <search className = {styles.searchBar}> 
+                    <form  className={styles.searchForm}>
                         <input name="searchBar" id="searchBar"placeholder='search...'/>
                     </form>
-                </search>
-                <button className={styles.logoutButton} onClick={handleAuth}>
-                    Signup/Login
-                </button>
-                <button className={styles.logoutButton} onClick={handleLogout}>
-                    Logout
-                </button>
-            </div>
+                </search>  
+                <div>
+                    <button className={styles.button} onClick={handleAuth}>
+                        Signup/Login
+                    </button>  
+                    <button className={styles.button} onClick={handleLogout}>
+                        Logout
+                    </button>  
+                </div>
         </div>
     );
 }; 
