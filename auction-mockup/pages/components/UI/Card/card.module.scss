@@ -1,0 +1,41 @@
+ 
+
+ .card{
+    background-color: #D9D9D9;
+    display: flex;
+    align-self: center; 
+    width: 75%; 
+    height: 100%; 
+    
+    
+ }
+
+ .content{
+    display: flex;
+    align-content: flex-start;   
+    
+ }
+
+ .button{
+    width: 125px; 
+    background-color: #D9D9D9;
+    color: #2C2C2C;
+    border: grey 2px solid; 
+    padding: .5rem 1rem;
+    margin-left: 1rem; 
+    border-radius: 8px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  
+    &:hover {
+      background-color: #15221a;
+      color: #fff;
+    }
+  
+    &:active {
+      transform: scale(0.98); /* Slight press effect */
+    }
+ }
+
