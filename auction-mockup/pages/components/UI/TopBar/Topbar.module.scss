@@ -3,7 +3,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #2F4C39; /* Primary color for the top bar */
+    background-color: #000000; /* Primary color for the top bar */
     padding: 1rem 2rem;
     color: #fff;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
@@ -20,9 +20,14 @@
   /* Actions Container */
   .actions {
     display: flex;
-    align-items: center;
+    align-items: center; 
+
   }
-  
+  .search{
+    display: flex; 
+    width: auto; 
+    padding: 2rem; 
+  }
   /* Logout Button Styles */
   .logoutButton {
     background-color: #D9D9D9;

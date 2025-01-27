@@ -15,10 +15,10 @@ const TopBar: React.FC = () =>  {
 
     return (
         <div className={styles.topBar}>
-            <h1 className={styles.logo}>BB-Wars Auction House</h1>
             <div className={styles.actions}> 
-                <search > 
-                    <form>
+            <h1 className={styles.logo}>BB-Wars Auction House</h1>
+                <search  > 
+                    <form className = {styles.search}>
                         <input name="searchBar" id="searchBar"placeholder='search...'/>
                     </form>
                 </search>

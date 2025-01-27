@@ -6,33 +6,21 @@
 .main {
   display: flex;
   flex-direction: column;
-  width: 100%;  /* Ensure the main area takes the full width remaining */
-  padding-left: 250px; /* Sidebar width */
-  background-color: #E8E3D7 ; /* Background color for the content */
+  width: 100%;  /* Ensure the main area takes the full width remaining */ 
+  background-color: #2d5d94 ; /* Background color for the content */
   overflow-x: hidden; /* Prevent horizontal overflow */
 }
 
 .content {
-  flex: 1;
-  display: flex;
+  width: 75%; 
+  flex: 1; 
+  display: flex; 
   flex-direction: column;
   padding: 2rem;
-  background-color: #fff; /* Optional: Match the background */
-  border-radius: 8px; /* Optional: Add rounded corners */
+  background-color: #6a6e79; /* Optional: Match the background */
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle shadow */
-  margin-top: 20px; /* Ensures that content is below the TopBar */
+  margin-left: auto; 
+  margin-right: auto;
 }
 
-/* Sidebar specific styles (make sure it has fixed width and stays in place) */
-.sidebar {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 250px;
-  height: 100vh;
-  background-color: #2d2d2d;
-  padding: 20px;
-  color: #fff;
-  z-index: 100;
-  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
-}
+ 
