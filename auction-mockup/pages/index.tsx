@@ -6,7 +6,7 @@ const SplashPage: React.FC = () => {
   return (
     <Layout >
       <div>
-          <h1>  Featured Items </h1>
+          <h1>  test</h1>
           
       </div>
     </Layout>

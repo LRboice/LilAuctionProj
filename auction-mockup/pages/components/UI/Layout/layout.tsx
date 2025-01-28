@@ -10,14 +10,9 @@ const Layout: React.FC<{ children: React.ReactNode}> = ({children}) => {
             <div className={styles.main}>
                 <TopBar/> 
                 <div className={styles.content}>
-                    <div>
-                        <h1 className={styles.title}>Featured</h1>
+                    <section>
                         <Card/>
-                    </div>
-                    <div>
-                        <h1 className={styles.title}>Hot Items</h1>
-                        <Card/>
-                    </div>
+                    </section>
 
                 </div>
             </div> 
