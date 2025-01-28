@@ -10,8 +10,9 @@
     padding-bottom: 2rem; 
   }
  .card{
-    background-color: #d5d6fd;
-    border-radius: 8px;
+    background-color: #d5d6fd; 
+    border: rgb(0, 0, 0) 4px solid; 
+    border-radius: 7px;
     display: flex;
     flex-direction: column; 
     align-self: center; 
@@ -29,13 +30,14 @@
  }
 
  .button{
-    width: 500px; 
+    width: 75%; 
     background-color: #D9D9D9;
     color: #2C2C2C;
     border: grey 2px solid; 
     padding: .5rem 1rem; 
     align-self: center; 
     margin-left: 1rem; 
+    margin-top: 1rem; 
     margin-bottom: 2rem; 
     border-radius: 8px;
     font-size: 0.9rem;

@@ -1,0 +1,22 @@
+ 
+.title {
+    display: flex; 
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    font-weight: bold;
+    width:auto;
+    color: #2C2C2C; 
+    background-color: #626888;
+    padding-bottom: 2rem; 
+  }
+.content {
+    width: 75%; 
+    flex: 1; 
+    display: flex; 
+    flex-direction: column;
+    padding: 2rem;
+    background-color: #6a6e79; /* Optional: Match the background */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle shadow */
+    margin-left: auto; 
+    margin-right: auto;
+  }

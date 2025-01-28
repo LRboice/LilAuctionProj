@@ -2,26 +2,30 @@ import React from "react";
 import { useRouter } from "next/router";
 import styles from './card.module.scss'; 
 
-const Card: React.FC = () => { 
+
+interface CardProps {
+    title: string;
+    description: string;
+    link: string;
+    linkText: string;
+}
+
+// add handler to redirect button press to passed link
+const Card: React.FC<CardProps> = ( { title, description, link, linkText }) => { 
     const router = useRouter();  
     return (
         
         <div className = {styles.card}> 
             <div>
-                <h1 className = {styles.title}>A TITLE OF GREAT PROPORTION???</h1>
+                <h1 className = {styles.title}>{title}</h1>
             </div> 
             
             <div className = {styles.content}>
 
-                <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
-                    incididunt ut labore et dolore magna aliqua. 
-                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-                     Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                </p>
+                <p> {description} </p>
                 <img src="../../../../../daJokahBaybee.png"  width = "30%" height = "20%"></img>
              </div> 
-            <button className= {styles.button}>Check it out</button>
+            <button className= {styles.button} >Check it out</button>
            
         </div>    
     ); 
