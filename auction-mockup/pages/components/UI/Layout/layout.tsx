@@ -12,6 +12,8 @@ const Layout: React.FC<{ children: React.ReactNode}> = ({children}) => {
                 <div className={styles.content}>
                     <section>
                         <Card/>
+                        <Card/>
+                        <Card/>
                     </section>
 
                 </div>
