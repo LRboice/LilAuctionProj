@@ -1,4 +1,4 @@
-import React from 'react'; 
+import React, {useEffect, useState} from 'react'; 
 import Layout from "./components/UI/Layout/layout";
 import Card from './components/UI/Card/card'; 
 import styles from '../styles/globals.module.scss'; 
