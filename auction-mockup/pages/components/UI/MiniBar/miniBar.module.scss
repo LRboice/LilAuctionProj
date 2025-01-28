@@ -1,0 +1,31 @@
+
+.miniBar{
+    height: 50px; 
+    display: flex; 
+
+    align-items:center; 
+    background-color: #000000; /* Primary color for the top bar */
+  }
+  
+  /* Logout Button Styles */
+  .button {
+    width: 250px; 
+    height: 50px;
+    background-color: #000000;
+    color: #ffffff;
+    border: rgb(255, 255, 255) 1px solid;  
+    font-size: 0.9rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  
+    &:hover {
+      background-color: #abafad;
+      color: #000000;
+    }
+  
+    &:active {
+      transform: scale(0.98); /* Slight press effect */
+    }
+  }
+  

@@ -11,26 +11,37 @@ const TopBar: React.FC = () =>  {
     const handleLogout = () =>{
         console.log("logout clicked"); 
     }; 
-
-    return (
-        <div className={styles.topBar}>
-            <div className={styles.actions}> 
-            <h1 className={styles.logo}>BB-Wars Auction House</h1>
-            </div>  
+    const handleListing = () =>{
+        console.log("creating listing");
+    }; 
+    const handleFAQ = () =>{
+        console.log('FAQ clicked'); 
+    }; 
+    return ( 
+        <div className={styles.topBar}> 
+            <h1 className={styles.logo}>BB-Wars Auction House</h1> 
                 <search className = {styles.searchBar}> 
                     <form  className={styles.searchForm}>
                         <input name="searchBar" id="searchBar"placeholder='search...'/>
                     </form>
                 </search>  
                 <div>
+                    <a className={styles.link} onClick={handleListing}>
+                        Submit a listing
+                    </a>
+
+                    <a className={styles.link} onClick={handleFAQ}>
+                        How does it work?
+                    </a>
                     <button className={styles.button} onClick={handleAuth}>
                         Signup/Login
                     </button>  
                     <button className={styles.button} onClick={handleLogout}>
                         Logout
                     </button>  
-                </div>
+                </div>  
         </div>
+        
     );
 }; 
 

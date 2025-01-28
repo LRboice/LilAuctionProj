@@ -1,22 +1,25 @@
 /* Top Bar Container */
 .topBar {
-    display: flex; 
-    justify-content: space-between; 
+    height: 100px;  
+    border: rgb(255, 255, 255) 1px solid; 
+    display: flex;  
     align-items:center;
     background-color: #000000; /* Primary color for the top bar */
     padding: 1rem 2rem;
     color: #fff;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
-  }
-  
+  } 
   /* Logo Styles */
   .logo {
     font-size: 1.5rem;
     font-weight: 600;
-    margin: 0;
     color: #fff;
+    margin-right: 2rem; 
   }
-  
+  .link { 
+    padding-left: 1rem; 
+
+  }
   /* Actions Container */
   .actions {
     display: flex;
@@ -24,7 +27,7 @@
 
   }
   .searchBar{   
-    width: 60%;
+    width: 40%;
     height: 50px;
     display: flex;
     border-radius: 4rem;
